@@ -1,0 +1,9 @@
+You are now connected to database "charades_words" as user "philippa".
+ word_id |    word    
+---------+------------
+       1 | sausage
+       2 | microphone
+       3 | oranges
+       4 | oxbow lake
+(4 rows)
+

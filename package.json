@@ -1,0 +1,19 @@
+{
+  "name": "charades_be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup-db": "psql -f ./db/setup.sql",
+    "seed-test": "npm run setup-db && NODE_ENV=test knex seed:run",
+    "query-db": "psql -f query-db.sql > query-output.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.21.1",
+    "pg": "^8.0.3"
+  }
+}
