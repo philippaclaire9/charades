@@ -1,0 +1,19 @@
+{
+  "GET /api": {
+    "description": "serves a json representation of all available endpoints"
+  },
+  "GET /api/words": {
+    "description": "returns an array of all words",
+    "queries": [],
+    "example response": { "words": ["sausages", "computer", "tin", "cake"] }
+  },
+  "POST /api/words": {
+    "description": "returns an object of added word",
+    "queries": [],
+    "example response": { "word": { "wordId": 6, "word": "pavement" } }
+  },
+  "DELETE /api/words/word_id": {
+    "description": "deletes word but returns nothing",
+    "queries": []
+  }
+}
